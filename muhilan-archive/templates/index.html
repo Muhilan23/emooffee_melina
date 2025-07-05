@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>KOPPEE - Coffee Shop HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.min.css') }}">
+</head>
+
+<body>
+  
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+                <h1 class="m-0 display-4 text-uppercase text-white">EMOOFFEE</h1>
+            </a>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                     <img class="w-100" src="{{url_for('static',filename='carousel-1.jpg')}}" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="text-primary font-weight-medium m-0">HAVE A BREAK, HAVE A</h2>
+                        <h1 class="display-1 text-white m-0">COFFEE</h1>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+           
+            <div class="row">
+                <div class="col-lg-4 py-0 py-lg-5">
+                    <h1 class="mb-3">EXPLORE</h1>
+                    <h5 class="mb-3">Good ideas start with brainstorming. Great ideas start with coffee.</h5>
+                    <p>You might have visited many cafe but not like this one as it suggests the coffee based on our moods,So what are you waiting explore the world of coffee with a seasoning of technology</p>
+                    <a href="picture.html" class="btn btn-secondary font-weight-bold py-2 px-4 mt-2">EXPERIENCE HERE</a>
+                </div>
+                <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="{{url_for('static',filename='about.png')}}" style="object-fit: cover;">
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">EMOOFFEE</h4>
+                <h1 class="display-4">DEVELOPED BY</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item" align = "justify-content-center">
+                    <div class="d-flex align-items-center mb-3">
+                         <img class="img-fluid" src="{{url_for('static',filename='profile_raghav.png')}}">
+                        <div class="ml-3">
+                            <h4>RAGHAV</h4>
+                            <i>Msc AIML</i>
+                        </div>
+                    </div>
+                    <p class="m-0">STUDYING IN CIT ,MSC AIML</p>
+                </div>
+                <div class="testimonial-item" align = "justify-content-center">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid" src="{{url_for('static',filename='profile_naveen.jpg')}}">
+                        <div class="ml-3">
+                            <h4>MUHILAN</h4>
+                            <i>Msc AIML</i>
+                        </div>
+                    </div>
+                    <p class="m-0">STUDYING IN CIT ,MSC AIML</p>
+                </div>
+                <div class="testimonial-item" align = "justify-content-center">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid" src="{{url_for('static',filename='profile_muhilan.jpg')}}">
+                        <div class="ml-3">
+                            <h4>NAVEEN</h4>
+                            <i>Msc AIML</i>
+                        </div>
+                    </div>
+                    <p class="m-0">STUDYING IN CIT ,MSC AIML</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+    <!-- Footer Start -->
+    <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+        <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Get In Touch</h4>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>COIMBATORE INSTITUTE OF TECHNOLOGY,COIMBATORE</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                <p class="m-0"><i class="fa fa-envelope mr-2"></i>MELINA@expo.com</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Follow Us</h4>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">SPECIAL MENTIONS</h4>
+                <div>
+                    <h6 class="text-white text-uppercase">THANKS TO</h6>
+                    <p>Dr.J.Shana M.C.A.,M.Phil.,Ph.D.
+                        Dr.C.Stanly Felix M.Sc.,M.Phil., PhD.
+                        Dr.A.Saravanan M.C.A.,M.Phil., PhD.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title> Image </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='/style.css') }}">
+        <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='/style_cr.css') }}">
+    </head>
+
+    <body>
+        
+        <button id="start-camera" autofocus>Start Camera</button>
+        <video id="video" width="320" height="240" autoplay></video>
+        <button id="click-photo"autofocus>Click Photo</button>
+        <div id="dataurl-container">
+ 
+            <canvas id="canvas" width="320" height="240"></canvas>
+            <h6 id="dataurl"></h6>  
+            <form action = "output.html">              
+                <button id="brew">BREW A COFFEE </a>
+            </button>
+
+            <script type="text/javascript" src="{{ url_for('static', filename='js/camera.js') }}"></script>
+
+    </body>
+</html>

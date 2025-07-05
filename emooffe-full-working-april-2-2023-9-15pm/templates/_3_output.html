@@ -1,0 +1,43 @@
+{% extends "_0_layout.html" %}
+
+{% block body %}
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-primary text-uppercase">EMOOFFEE</h1>
+            <div class="d-inline-flex mb-lg-5">
+                <p class="m-0 text-white"><a class="text-white" href="/">Home</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="reservation position-relative overlay-top overlay-bottom">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 my-5 my-lg-0">
+                        <div class="p-5">
+                            <div class="mb-4">
+                                <h1 class="display-3 text-primary">Coffee is a hug in a mug</h1>
+                                <h4 class="text-white">GRAB YOUR COFFEE!</h4>
+                            </div>
+                            <img  class = "img-fluid" src="{{ url_for('static', filename = 'img/coffee_brew.gif')}}">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-center p-5" style="background: rgba(51, 33, 29, .8);">
+                            <h1 class="text-white mb-4 mt-5">YOUR COFFEE IS READY!</h1>
+                            
+                            <img  class = "img-fluid" src="{{ url_for('static', filename = 'temp/user_levels.png')}}">
+                            <form class="mb-5">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
